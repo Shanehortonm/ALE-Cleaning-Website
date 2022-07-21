@@ -119,6 +119,13 @@
     opacity: 0.7;
 }
 
+
+/*
+======================================================
+       Start Social Media Imgs
+======================================================
+*/
+
 .social {
     position: absolute;
     bottom: 20px;
@@ -142,13 +149,17 @@
 
 
 .social li a:hover {
-    transform: scale(0.5) translateY(-15px);
+    transform: scale(0.9) translateY(-25px);
 }
 
 .social li img {
     width: 50px;
 }
 
-
+/*
+======================================================
+     End Social Media Imgs
+======================================================
+*/
 
 
