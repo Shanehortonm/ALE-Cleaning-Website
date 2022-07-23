@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+================================================================
+        Main Nav
+================================================================
+*/
+
+
+nav {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-nav li {
+    list-style: none;
+    padding: 10px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+}
