@@ -10,8 +10,6 @@
         Main Nav
 ================================================================
 */
-
-
 nav {
     background-color: aquamarine;
     height: 100%;
@@ -19,6 +17,7 @@ nav {
 }
 
 .main-nav {
+    overflow: hidden;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -31,4 +30,18 @@ nav {
 
 .main-nav li a {
     text-decoration: none;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 16px;
 }
