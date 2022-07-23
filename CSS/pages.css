@@ -45,3 +45,8 @@ nav {
 .sticky + .content {
     padding-top: 16px;
 }
+
+
+main {
+    font-size: 3rem;
+}
