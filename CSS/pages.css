@@ -32,6 +32,10 @@ header {
     padding: 20px 50px;
     z-index: 1000;
 }
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
 
 header .logo {
     position: relative;
@@ -67,6 +71,7 @@ header ul li a {
 }
 
 header a:hover {
+    padding: 10px;
     text-transform: uppercase;
     color: black;
     background-color: white;
