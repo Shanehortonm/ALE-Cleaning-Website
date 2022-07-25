@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #000;
+    background: aqua;
     min-height: 200vh;
 }
 
@@ -34,7 +34,19 @@ header {
 }
 header.sticky {
     padding: 5px 100px;
-    background: #fff;
+    background: #fff;    
+}
+
+header.sticky a {
+    color: #000;
+}
+
+header.sticky a:hover {
+    padding: 5px;
+    text-transform: uppercase;
+    color: aqua;
+    background-color: black;
+    border-radius: 10px;
 }
 
 header .logo {
@@ -45,6 +57,10 @@ header .logo {
     font-size: 2em;
     letter-spacing: 3px;
     transition: 2s;
+}
+
+header.sticky .logo {
+    color: #000;
 }
 
 header ul {
@@ -64,25 +80,154 @@ header ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: aqua;
     transition: 0.9s;
     font-size: 1.3em;
     text-align: center;
 }
 
 header a:hover {
-    padding: 10px;
+    padding: 5px;
     text-transform: uppercase;
     color: black;
     background-color: white;
     border-radius: 10px;
 }
 
+
+/*
+============================================================
+        Start of Banner
+============================================================
+*/
+
+
 .nav-banner {
-    position: relative;
     width: 100%;
+    min-height: 80vh;
     height: 100vh;
     background: url(/img/servicebanner.png);
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.9;
 }
+
+
+.banner-container {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+.banner-box {
+    
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    max-width: 65%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 2px aqua;
+}
+
+.banner-text {
+    margin-top: 10px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner-btn {
+    margin-bottom: 10px;
+    min-width: 280px;
+    min-height: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: aqua;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%,
+     rgba(79,209,197,1) 100%);
+     border: none;
+     border-radius: 1000px;
+     box-shadow: 12px 12px 24px rgba(79,209,197,0.64);
+     transition: all 0.3s ease-in-out 0s;
+     cursor: pointer;
+     outline: none;
+     position: relative;
+     padding: 10px;
+}
+
+.banner-btn::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 3px solid #00FFCB;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 2.3s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 10px;
+      height: 10px;
+      opacity: .8;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
