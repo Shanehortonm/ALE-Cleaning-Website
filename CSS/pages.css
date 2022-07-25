@@ -1,12 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Lora','Times New Roman', Times, serif;
 }
 
+body {
+    background: cornflowerblue;
+    min-height: 200vh;
+}
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
 
 /*
 ================================================================
-        Main Nav
+        Top Nav
 ================================================================
 */
+
