@@ -8,7 +8,7 @@
 }
 
 body {
-    background: aqua;
+    background: rgba(0, 255, 255, 0.5);
     min-height: 200vh;
 }
 
@@ -50,6 +50,7 @@ header.sticky a:hover {
 }
 
 header .logo {
+    user-select: none;
     position: relative;
     font-weight: 700;
     color: aqua;
