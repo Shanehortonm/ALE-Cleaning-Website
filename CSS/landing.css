@@ -233,6 +233,7 @@
 
 .menu-wrap .menu > div {
     background-color: lightblue;
+    opacity: 0.9;
     border-radius: 50%;
     width: 50vw;
     height: 50vw;
@@ -254,10 +255,20 @@
 
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
+<<<<<<< HEAD
+=======
+    opacity: 1;
+>>>>>>> 6505d1c7e618762379cdf5415a6219c6c77bc291
     color: black;
     font-size: 1.5rem;
     padding: 1rem;
 }
+
+.menu-wrap .menu > div > div > ul > li:hover {
+    background-color: white;
+    transition: 0.6 ease-in-out;
+    border-radius: 50px;
+} 
 
 .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
