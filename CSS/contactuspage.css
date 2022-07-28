@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora','Times New Roman', Times, serif;
+}
+
+body {
+    background: rgba(0, 255, 255, 0.5);
+    min-height: 200vh;
+}
+
+/*
+=======================================
+        Start of NavBar
+=======================================
+*/
+
+header {
+    position: fixed;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1.2s;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;    
+}
+
+header.sticky a {
+    color: #000;
+}
+
+header.sticky a:hover {
+    padding: 5px;
+    text-transform: uppercase;
+    color: aqua;
+    background-color: black;
+    border-radius: 10px;
+}
+
+header .logo {
+    user-select: none;
+    position: relative;
+    font-weight: 700;
+    color: aqua;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 3px;
+    transition: 2s;
+}
+
+header.sticky .logo {
+    color: #000;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    display: flex;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: aqua;
+    transition: 0.9s;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header a:hover {
+    padding: 5px;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*
