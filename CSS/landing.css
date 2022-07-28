@@ -110,10 +110,6 @@
     opacity: 0.7;
 }
 
-.showcase-header{
-    
-    
-}
 /*
 =====================================================================
         End of Showcase
@@ -255,10 +251,6 @@
 
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-<<<<<<< HEAD
-=======
-    opacity: 1;
->>>>>>> 6505d1c7e618762379cdf5415a6219c6c77bc291
     color: black;
     font-size: 1.5rem;
     padding: 1rem;
