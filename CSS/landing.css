@@ -23,13 +23,13 @@
     position: absolute;
     right: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #111;
-    color: #fff;
+    color: white;
     z-index: 2;
 }
 
@@ -315,5 +315,117 @@
      End Social Media Imgs
 ======================================================
 */
+@media screen and (min-width: 481px) {
+    
+}
+
+@media screen and (min-width: 769px) {
+
+    /*
+=====================================================================
+        Start of Showcase
+=====================================================================
+*/
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #128ac2;
+    mix-blend-mode: overlay;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.showcase-text{
+    position: relative;
+    z-index: 10;
+}
+
+.showcase-text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.showcase-text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.showcase-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.showcase-text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.showcase-text a:hover {
+    letter-spacing: 6px;
+    opacity: 0.7;
+}
+
+/*
+=====================================================================
+        End of Showcase
+=====================================================================
+*/
+
+}
