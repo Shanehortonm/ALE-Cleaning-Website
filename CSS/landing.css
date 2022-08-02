@@ -23,7 +23,7 @@
     position: absolute;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 100% ;
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -140,11 +140,12 @@
 }
 
 .menu-wrap .hamburger {
+    border: 1px solid red;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    width: 60px;
+    width: 70px;
     height: 60px;
     padding: 1rem;
     display: flex;
