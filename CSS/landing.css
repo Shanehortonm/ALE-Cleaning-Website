@@ -8,7 +8,6 @@
 }
 
 
-
 /*
 =====================================================================
         Start of Showcase
@@ -17,16 +16,21 @@
 .logo {
     text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    
+
 }
 
 .showcase {
     position: absolute;
     right: 0;
     width: 100%;
-    height: 100% ;
-    padding: 100px;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background: #111;
     color: white;
@@ -67,25 +71,25 @@
 }
 
 .showcase-text{
-    position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.showcase-text h2 {
-    font-size: 5em;
-    font-weight: 800;
-    line-height: 1em;
+.showcase-text h1 {
+    padding: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-.showcase-text h3 {
-    font-size: 4em;
-    font-weight: 700;
-    line-height: 1em;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 .showcase-text p {
+    font-family: cursive;
     font-size: 1.2em;
     margin: 20px 0;
     font-weight: 400;
@@ -98,11 +102,20 @@
     background: #fff;
     padding: 10px 30px;
     text-decoration: none;
-    color: #111;
+    color: whitesmoke;
     margin-top: 10px;
+    border-radius: 3px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.5s;
+    box-shadow: rgba(5, 119, 172, 0.726) 0px -23px 25px 0px inset, 
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .showcase-text a:hover {
@@ -126,6 +139,9 @@
     top: 0;
     left: 0;
     z-index: 2;
+    display: inline-block;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .menu-wrap .toggler {
@@ -140,7 +156,6 @@
 }
 
 .menu-wrap .hamburger {
-    border: 1px solid red;
     position: absolute;
     top: 0;
     left: 0;
@@ -283,8 +298,6 @@
 */
 
 .social {
-    position: absolute;
-    bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +309,6 @@
 
 .social li a {
     display: inline-block;
-    filter: invert(1);
     margin-right: 20px;
     transform: scale(0.5);
     transition: 0.5s ease-in-out;
@@ -308,7 +320,7 @@
 }
 
 .social li img {
-    width: 50px;
+    width: 70px;
 }
 
 /*
