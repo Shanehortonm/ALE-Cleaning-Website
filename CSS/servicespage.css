@@ -33,11 +33,11 @@ body {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.7);
 }
   
 .header li a {
-    color: black;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
   
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: rgba(0, 255, 255, 0.3);
 }
   
 .header .logo {
@@ -56,7 +56,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 1.7rem;
+   font-size: 2rem;
    margin-top: 10px;
    padding: 20px;
    color: whitesmoke;
@@ -82,19 +82,19 @@ body {
 }
   
 .header .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
+    background: white;
+    display: flex;
+    height: 3px;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px;
+    width: 24px;
 }
   
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-    background: #333;
+    background: white;
     content: '';
-    display: block;
+    display: flex;
     height: 100%;
     position: absolute;
     transition: all .2s ease-out;
