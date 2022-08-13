@@ -221,10 +221,10 @@ body {
     color: #313133;
     background: whitesmoke;
     background: linear-gradient(90deg, var(--website1) 0%,
-     rgba(79,209,197,1) 100%);
+     var(--website3) 100%);
      border: none;
      border-radius: 1000px;
-     box-shadow: 12px 12px 24px rgba(79,209,197,0.64);
+     box-shadow: 5px 5px 19px 10px var(--website2);
      transition: all 0.3s ease-in-out 0s;
      cursor: pointer;
      outline: none;
@@ -237,8 +237,8 @@ body {
     border-radius: 1000px;
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    border: 6px solid white;
+    box-shadow: 0 0 60px white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -260,7 +260,7 @@ body {
     content: '';
     width: 30px; height: 30px;
     border-radius: 100%;
-    border: 3px solid #00FFCB;
+    border: 3px solid white;
     position: absolute;
     z-index: 1;
     top: 50%;
