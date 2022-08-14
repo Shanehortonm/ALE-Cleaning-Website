@@ -79,7 +79,10 @@ body {
     color: black;
     border-bottom: 1.5px solid white;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: center;
 }
   
   /* menu */
@@ -378,74 +381,155 @@ body {
 =========================================================================
 */
 
-.footer-nav {
-    border: 1px solid red;
+footer {
+    background-color: var(--website2);
     width: 100%;
-    height: 60%;
+    height: 100%;
+}
+
+.footer-nav {
     padding: 20px;
-    margin-top: 20px;
-    background-color: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.footer-links{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-.footer-links ul {
-    border: 1px solid red;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     list-style: none;
 }
 
-.footer-links ul li {
-    padding: 10px;
-    justify-content: flex-end;
-    align-items: flex-end;
+.footer-nav li ul {
+    list-style: none;
 }
 
-.footer-links ul li a {
-    text-decoration: none;
+.list4 {
+    
+}
+
+
+/* Begin Social Media Icons*/
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s ease-in-out;
+}
+
+
+.social li a:hover {
+    transform: scale(0.9) translateY(-25px);
+}
+
+.social li img {
+    width: 70px;
 }
 
 
 /*
 =========================================================
-        Begin Media Qurt
+        Begin Media Query
 =========================================================
 */
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
+
+    /*
+    =================================
+    begin navbar
+    =================================
+    */
+    .header {
+        position: relative;
+    }
+    
     .menu {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
+
     .header .menu {
         max-height: none;
     }
+    
     .header .menu-icon {
         display: none;
     }
+
+    .menu li a {
+        font-size: 28px;
+    }
+
+    .logo-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        box-shadow: none;
+        border: none;
+        display: none;
+    }
+    
+    .logo-img {
+        margin: 30px 0 0 0;
+        display: initial;
+        width: 350px;
+        height: 250px;
+        border-radius: 50%;
+        mix-blend-mode: luminosity;
+    }
+
+
+    /*
+    ======================================
+    begin banner
+    ======================================
+    */
+
+    .banner-box {
+        width: 90%;
+        font-size: 20px;
+    }
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
+
+     /*
+    =================================
+    begin navbar
+    =================================
+    */
+
     .header {
-        display: flex;
+        border: 1px solid red;
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-holder {
         flex-direction: row;
     }
 
+    .logo {
+        display: contents;
+    }
+
     .logo-img {
-        display: ;
+       wudg
     }
 }
