@@ -473,6 +473,18 @@ footer {
     text-align: center;
 }
 
+.footer-list > h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.footer-list > h3 {
+    text-decoration: underline;
+    font-size: 1.35rem;
+    padding-bottom: 2px;
+}
+
 .list1 {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -483,12 +495,6 @@ footer {
     margin: 0;
     padding: 0;
 }
-
-.list1 h2 {
-    font-size: 2rem;
-}
-
-
 
 .list2 {
     grid-column-start: 1;
@@ -506,6 +512,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.list2 li , .list3 li {
+    padding-bottom: 4px;
+}
+
+.list2 a:hover, .list3 a:hover {
+    color: whitesmoke;
 }
 
 /* Begin Social Media Icons*/
