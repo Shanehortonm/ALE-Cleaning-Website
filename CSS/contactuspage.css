@@ -27,65 +27,14 @@ body {
         Start of NavBar
 =======================================
 */
-
-.header {
-    background-color: var(--website2);
-    box-shadow: 1px 1px 4px 0 var(--website2);
-    width: 100%;
-    position: sticky;
-    z-index: 3;
-    top: 0;
-    display: inline-block;
-}
-
-
-.header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: var(--website2);
-    margin-bottom: 10px;
-}
-  
-.header li a {
-    font-size: 1.3rem;
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding-bottom: 30px;
-  }
-  
-.header .menu-btn:hover {
-    background-color: var(--website1);
-    border-radius: 40px;
-    border: 1.5px solid white;
-    height: 80%;
-}
-
-.logo-img {
-    display: none;
-}
-
-.logo {
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    margin-top: 10px;
-    padding: 10px;
-    color: black;
-    border-bottom: 1.5px solid white;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    text-align: center;
-}
-  
+<div class="logo">
+<h3>
+  <span>A</span>
+  <span>L</span>
+  <span>E</span>
+</h3>
+<h4>Cleaning Services</h4>
+</div>
   /* menu */
   
 .header .menu {

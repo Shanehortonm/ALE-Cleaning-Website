@@ -26,6 +26,7 @@ body {
 =======================================
 */
 
+
 .header {
     background-color: var(--website2);
     box-shadow: 1px 1px 4px 0 var(--website2);
@@ -68,22 +69,83 @@ body {
 }
 
 .logo {
-    font-family: cursive;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    margin-top: 10px;
+    border-radius: 10px;
     padding: 10px;
     color: black;
     border-bottom: 1.5px solid white;
-    border-radius: 20px;
+    
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     text-align: center;
 }
-  
+
+.logo h3 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 5rem;
+}
+
+.logo h3 span {
+    font-size: 5rem;
+    font-family: cursive;
+    display: table-cell;
+    margin: 0;
+    padding: 10px;
+    animation: animate 10s linear infinite;
+    text-shadow: 0px 10px 10px;
+}
+
+h3 span:nth-child(1)
+{
+	animation-delay: 0.5s;
+}
+h3 span:nth-child(2)
+{
+	animation-delay: 0.75s;
+}
+h3 span:nth-child(3)
+{
+	animation-delay: 1s;
+}
+
+@keyframes animate
+{
+	0%,30%
+	{
+		color: var(--website1);
+		filter: blur(1px);
+		text-shadow: 0 0 10px whitesmoke,
+		             0 0 20px whitesmoke,
+		             0 0 40px whitesmoke,
+		             0 0 80px whitesmoke,
+		             0 0 120px whitesmoke;
+	}
+	0%,50%
+	{
+		color: whitesmoke;
+		filter: blur(0px);
+		text-shadow: none;
+	}
+
+
+}
+
+.logo h4 {
+    font-family: cursive;
+    font-size: 2rem;
+    text-shadow: 0px 10px 10px;
+    padding-bottom: 10px;
+}
+
   /* menu */
   
 .header .menu {
