@@ -19,14 +19,16 @@ body {
     background: var(--website1);
     
 }
- .dummyspace {
-    height: 50vh;
- }
+
+.dummy-space {
+    height: 40vh;
+}
 /*
 =======================================
         Start of NavBar
 =======================================
 */
+
 
 .header {
     background-color: var(--website2);
@@ -79,7 +81,6 @@ body {
     padding: 10px;
     color: black;
     border-bottom: 1.5px solid white;
-    
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
         rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -140,13 +141,17 @@ h3 span:nth-child(3)
 
 }
 
-.logo h4 {
+.logo {
+    color: whitesmoke;
     font-family: cursive;
     font-size: 2rem;
     text-shadow: 0px 10px 10px;
     padding-bottom: 10px;
 }
 
+.logo h4 {
+    color: white;
+}
   /* menu */
   
 .header .menu {
@@ -221,6 +226,141 @@ h3 span:nth-child(3)
     top: 0;
 }
 
+/*
+============================================================
+        Start of Banner
+============================================================
+*/
+
+
+.nav-banner {
+    width: 100%;
+    min-height: 50vh;
+    height: 85vh;
+    background: url(/img/servicebanner.png);
+    background-size: cover;
+    opacity: 0.9;
+    box-shadow: 0 0 15px 5px;
+}
+
+
+.banner-container {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+.banner-box {
+    
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 2px var(--website5);
+}
+
+.banner-text {
+    margin-top: 10px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner-btn {
+    margin-bottom: 10px;
+    min-width: 280px;
+    min-height: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: whitesmoke;
+    background: linear-gradient(90deg, var(--website1) 0%,
+     var(--website3) 100%);
+     border: none;
+     border-radius: 1000px;
+     box-shadow: 5px 5px 19px 10px var(--website2);
+     transition: all 0.3s ease-in-out 0s;
+     cursor: pointer;
+     outline: none;
+     position: relative;
+     padding: 10px;
+}
+
+.banner-btn::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid white;
+    box-shadow: 0 0 60px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 3px solid white;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 2.3s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 10px;
+      height: 10px;
+      opacity: .8;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
 
 /*
 =========================================================================
@@ -232,23 +372,77 @@ footer {
     background-color: var(--website2);
     width: 100%;
     height: 100%;
+    box-shadow: whitesmoke 0px -50px 36px -28px inset, var(--website1) 0px 2px 4px 0px inset;;
 }
 
 .footer-nav {
-    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     list-style: none;
 }
 
 .footer-nav li ul {
     list-style: none;
 }
-
-.list4 {
-    
+.footer-nav a {
+    color: black;
+    text-decoration: none;
 }
 
+.footer-list {
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-list > h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.footer-list > h3 {
+    text-decoration: underline;
+    font-size: 1.35rem;
+    padding-bottom: 2px;
+}
+
+.list1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.list3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.list4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list2 li , .list3 li {
+    padding-bottom: 4px;
+}
+
+.list2 a:hover, .list3 a:hover {
+    color: whitesmoke;
+}
 
 /* Begin Social Media Icons*/
 
@@ -312,8 +506,16 @@ footer {
     }
 
     .menu li a {
-        font-size: 28px;
+        font-size: 22px;
         border-bottom: 1px solid whitesmoke;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li a:hover {
+        color: black;
+        border-bottom: 1px solid black;
+        transition: .4s ease-in-out;
     }
 
     .logo-holder {
@@ -331,24 +533,12 @@ footer {
     }
     
     .logo-img {
-        margin: 30px 0 0 0;
+        margin-top: 20px;
         display: initial;
         width: 350px;
         height: 250px;
         border-radius: 50%;
         mix-blend-mode: luminosity;
-    }
-
-
-    /*
-    ======================================
-    begin banner
-    ======================================
-    */
-
-    .banner-box {
-        width: 90%;
-        font-size: 20px;
     }
 
 }
@@ -398,7 +588,7 @@ footer {
     }
 
     .menu li a {
-        font-size: 26px;
+        font-size: 20px;
         margin: 0px;
         padding: 8px;
     }
