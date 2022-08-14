@@ -22,9 +22,10 @@
 }
 
 .logo img {
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     opacity: 0.9;
+    transition: 0.4s ease-in-out;
 }
 
 .showcase {
@@ -333,11 +334,28 @@
      End Social Media Imgs
 ======================================================
 */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 500px) {
+
+    .logo img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .menu-wrap ul a {
+        font-size: 20px;
+    }
+    
     
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 825px) {
 
+    .logo img {
+        width: 425px;
+        height: 275px;
 
+    }
+    .menu-wrap ul a {
+        font-size: 30px;
+    }
 }

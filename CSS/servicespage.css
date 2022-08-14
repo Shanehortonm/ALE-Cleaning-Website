@@ -56,7 +56,6 @@ body {
     padding-bottom: 30px;
   }
   
-.header li a:hover,
 .header .menu-btn:hover {
     background-color: var(--website1);
     border-radius: 40px;
@@ -466,6 +465,7 @@ footer {
 
     .menu li a {
         font-size: 28px;
+        border-bottom: 1px solid whitesmoke;
     }
 
     .logo-holder {
@@ -514,22 +514,48 @@ footer {
     */
 
     .header {
-        border: 1px solid red;
-        display: grid;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        height: 30vh;
     }
 
     .logo-holder {
-        flex-direction: row;
-    }
-
-    .logo {
-        display: contents;
+       
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .logo-img {
-       wudg
+        margin: 10px;
+        padding: 30px;
+        border-radius: 10px;
+        width: 600px;
+        box-shadow: var(--website1) inset 0px 4px 12px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 20%;
+        
+    }
+
+    .menu li a {
+        font-size: 26px;
+        margin: 0px;
+        padding: 8px;
+    }
+    
+    .menu a {
+        padding: 20px;
     }
 }
