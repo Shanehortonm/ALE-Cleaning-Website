@@ -413,6 +413,9 @@ h3 span:nth-child(3)
     font-family: cursive,;
 }
 
+.services-intro1 ul li {
+    margin-bottom: 15px;
+}
 
 .services-intro2 {
     display: flex;
@@ -442,17 +445,48 @@ h3 span:nth-child(3)
     font-family: cursive;
 }
 
+
 /* Begin Table */
+
+.table-pattern {
+    background-color: var(--website1);
+}
+
 
 .cleaning-checklist {
     width: 100%;
-    height: 50vh;
+    padding-bottom: 30px;
 }
 
 .cleaning-checklist-table {
-    padding: 10px;
     text-align: center;
+    padding: 20px;
 }
+
+.cleaning-checklist-table caption {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+.cleaning-checklist-table thead th {
+    font-size: 1.1rem;
+    padding: 20px 0px 10px;
+}
+
+.cleaning-checklist-table tbody td {
+    padding-top: 5px;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
 
 /* styling for check mark */
 .check {
