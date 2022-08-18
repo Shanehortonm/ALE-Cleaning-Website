@@ -410,7 +410,6 @@ h3 span:nth-child(3)
 
 .services-intro1 ul {
     font-size: 20px;
-    font-family: cursive,;
 }
 
 .services-intro1 ul li {
@@ -441,9 +440,6 @@ h3 span:nth-child(3)
         rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.services-intro2 p {
-    font-family: cursive;
-}
 
 
 /* Begin Table */
