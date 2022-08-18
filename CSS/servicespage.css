@@ -16,7 +16,7 @@
 }
 
 body {
-    background: var(--website1);
+    background: whitesmoke;
     
 }
 
@@ -28,8 +28,8 @@ body {
 
 
 .header {
-    background-color: var(--website2);
-    box-shadow: 1px 1px 4px 0 var(--website2);
+    background-color: var(--website1);
+    box-shadow: 1px 1px 4px 0 var(--website1);
     width: 100%;
     position: sticky;
     z-index: 3;
@@ -43,7 +43,7 @@ body {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: var(--website2);
+    background-color: var(--website1);
     margin-bottom: 10px;
 }
   
@@ -383,14 +383,14 @@ h3 span:nth-child(3)
 }
 
 .services-intro1 {
-    background-color: var(--website3);
-    border: 1px solid white;
+    background-color: var(--website1);
+    border: 1px solid var(--website1);
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 60px;
     display: flex;
     align-items: center;
-    color: black;
+    color: whitesmoke;
     letter-spacing: 1.4px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
         rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
@@ -409,7 +409,8 @@ h3 span:nth-child(3)
 }
 
 .services-intro1 ul {
-    font-size: 18px;
+    font-size: 20px;
+    font-family: cursive,;
 }
 
 
@@ -417,14 +418,14 @@ h3 span:nth-child(3)
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: var(--website3);
+    background-color: var(--website1);
     border: 1px solid white;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 60px;
     display: flex;
     align-items: center;
-    color: black;
+    color: whitesmoke;
     font-size: 24px;
     letter-spacing: 1.2px;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
@@ -435,6 +436,10 @@ h3 span:nth-child(3)
         rgba(0, 0, 0, 0.09) 0px 8px 4px, 
         rgba(0, 0, 0, 0.09) 0px 16px 8px, 
         rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.services-intro2 p {
+    font-family: cursive;
 }
 
 /* Begin Table */
@@ -449,8 +454,8 @@ h3 span:nth-child(3)
     text-align: center;
 }
 
+/* styling for check mark */
 .check {
-
     display: inline-flex;
     transform: rotate(45deg);
     height: 24px;
@@ -460,6 +465,8 @@ h3 span:nth-child(3)
 }
 
 
+
+
 /*
 =========================================================================
         Start Footer
@@ -467,7 +474,7 @@ h3 span:nth-child(3)
 */
 
 footer {
-    background-color: var(--website2);
+    background-color: var(--website1);
     width: 100%;
     height: 100%;
     box-shadow: whitesmoke 0px -50px 36px -28px inset, var(--website1) 0px 2px 4px 0px inset;;
@@ -705,8 +712,22 @@ footer {
     
     .services-intro {
         flex-direction: row;
-        padding: 20px;
+        align-items: stretch;
     }
+
+    .services-intro1 {
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
+    .services-intro1 h1, p {
+        padding: 30px;
+    }
+
+    .services-intro1 h1 {
+        padding-left: 90px;
+    }
+
 
 
 }
