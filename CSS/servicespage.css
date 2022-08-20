@@ -29,7 +29,7 @@ body {
 
 .header {
     background-color: var(--website1);
-    box-shadow: 1px 1px 4px 0 var(--website1);
+    box-shadow: 1px 1px 4px 0 whitesmoke;
     width: 100%;
     position: sticky;
     z-index: 3;
@@ -44,7 +44,6 @@ body {
     list-style: none;
     overflow: hidden;
     background-color: var(--website1);
-    margin-bottom: 10px;
 }
   
 .header li a {
@@ -54,7 +53,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
   
 .header .menu-btn:hover {
@@ -64,19 +63,12 @@ body {
     height: 80%;
 }
 
-.logo-holder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo-img {
-    margin-top: 20px;
+    margin: 10px;
     display: initial;
-    width: 290px;
-    height: 200px;
+    width: 250px;
+    
     border-radius: 50%;
-
 }
 
   /* menu */
@@ -93,7 +85,7 @@ body {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 80px 50px;
     position: relative;
     user-select: none;
 }
@@ -101,10 +93,10 @@ body {
 .header .menu-icon .navicon {
     background: white;
     display: flex;
-    height: 3px;
+    height: 4px;
     position: relative;
     transition: background .2s ease-out;
-    width: 24px;
+    width: 35px;
 }
   
 .header .menu-icon .navicon:before,
@@ -119,11 +111,11 @@ body {
 }
   
 .header .menu-icon .navicon:before {
-    top: 5px;
+    top: 10px;
 }
   
 .header .menu-icon .navicon:after {
-    top: -5px;
+    top: -10px;
 }
   
   /* menu btn */
@@ -396,14 +388,14 @@ body {
 }
 
 .cleaning-checklist-table thead th {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 20px 0px 10px;
 }
 
 .cleaning-checklist-table tbody td {
     padding-top: 5px;
     padding-bottom: 10px;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 /* styling for check mark */
