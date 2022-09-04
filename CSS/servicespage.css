@@ -11,6 +11,17 @@
     --website3: #EFEBCE;
     --website4: #D6CE93;
     --website5: #A3A380;
+
+
+    --primary-color: #c40000;
+	--primary-color-lighter: rgb(255, 36, 36);
+
+	--back-ground-color: #ffffff;
+	--secondary-back-ground-color: #f5f5f5;
+
+	--dark-color: #000000;
+	--grey-color: #aaaaaa;
+	--light-color: #ffffff;
 }
 
 * {
@@ -22,7 +33,7 @@
 
 body {
     background: whitesmoke;
-    
+    overflow-x: hidden;
 }
 
 /*
@@ -304,7 +315,7 @@ body {
 =====================================================================
 */
 .services-intro {
-    margin-top: 100px;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -363,6 +374,110 @@ body {
 }
 
 /*
+=========================================================================
+        Start of Gallery
+=========================================================================
+*/
+
+.gallery {
+    margin-top: 10vh;
+}
+
+.gallery-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--back-ground-color);
+    overflow-x: hidden;
+}
+
+.gallery-container h1 {
+    margin-bottom: 5vh;
+    font-size: 2rem;
+    border-bottom: 1px solid;
+}
+
+.gallery-container h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.4rem;
+    padding-bottom: 200px;
+    text-shadow: 10px 10px 25px var(--website1),
+    -10px 10px 25px var(--website1),
+    -10px -10px 25px var(--website1),
+    10px -10px 25px var(--website1);
+    text-transform: uppercase;
+}
+
+.box-1 {
+	background-image: url("https://images.unsplash.com/photo-1517467139951-f5a925c9f9de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80");
+}
+
+.box-2 {
+	background-image: url("https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+}
+
+.box-3 {
+	background-image: url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW4lMjBiYXRocm9vbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.box-4 {
+	background-image: url("https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+
+.box-5 {
+	background-image: url("https://images.unsplash.com/photo-1534889156217-d643df14f14a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNsZWFuJTIwaG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.box-6 {
+	background-image: url("https://images.unsplash.com/photo-1567016515344-5e3b0d67bb75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA2fHxyZWxheGluZyUyMGF0JTIwaG9tZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.box {
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 25px;
+	color: var(--light-color);
+
+	background-color: var(--primary-color);
+	border: #ffffff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.6);
+
+	transform: translateX(-300%);
+	transition: transform 500ms ease-in-out;
+}
+
+.box:nth-of-type(even) {
+	transform: translateX(+300%);
+}
+
+.box.show {
+	transform: translateX(0);
+}
+
+.box.show:hover {
+	cursor: pointer;
+	background-color: var(--primary-color-lighter);
+	transform: scale(1.1);
+}
+
+.box.show:hover ~ .box.show {
+	filter: blur(1px);
+}
+
+/*
 =====================================================================
     Start of Table
 =====================================================================
@@ -375,6 +490,7 @@ body {
 .cleaning-checklist {
     width: 100%;
     padding-bottom: 30px;
+    margin-top: 10vh;
 }
 
 .cleaning-checklist-table {
@@ -413,8 +529,6 @@ body {
     border-right: 7px solid greenyellow;
 }
 
-.
-
 
 
 /*
@@ -424,6 +538,7 @@ body {
 */
 
 footer {
+    color: whitesmoke;
     background-color: var(--website1);
     width: 100%;
     height: 100%;
