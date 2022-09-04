@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+
+
+
+
 
 :root {
-    --website1: #BB8588;
-    --website2: #D8A48F;
+    --website1: #0077b6;
+    --website2: #90e0ef;
     --website3: #EFEBCE;
     --website4: #D6CE93;
     --website5: #A3A380;
@@ -12,7 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lora','Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -26,6 +31,18 @@ body {
 =======================================
 */
 
+.logo {
+    padding: 10px;
+    display: inline-block;
+}
+
+.logo h1 {
+    font-size: 30px;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Caveat';
+}
 
 .header {
     background-color: var(--website1);
@@ -34,9 +51,8 @@ body {
     position: sticky;
     z-index: 3;
     top: 0;
-    display: inline-block;
+    display: flex;
 }
-
 
 .header ul {
     margin: 0;
@@ -56,6 +72,17 @@ body {
     padding-bottom: 15px;
   }
   
+
+  /* menu */
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    display: inline-block;
+    padding-right: 150px;
+    text-align: center;
+}
+
 .header .menu-btn:hover {
     background-color: var(--website1);
     border-radius: 40px;
@@ -63,29 +90,13 @@ body {
     height: 80%;
 }
 
-.logo-img {
-    margin: 10px;
-    display: initial;
-    width: 250px;
-    
-    border-radius: 50%;
-}
-
-  /* menu */
-  
-.header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-  
   /* menu icon */
   
 .header .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 80px 50px;
+    padding: 40px 30px;
     position: relative;
     user-select: none;
 }
@@ -155,7 +166,7 @@ body {
 .nav-banner {
     width: 100%;
     min-height: 50vh;
-    height: 85vh;
+    height: 70vh;
     background: url(/img/servicebanner.png);
     background-size: cover;
     opacity: 0.9;
@@ -287,10 +298,13 @@ body {
     Start of Main
 =====================================================================
 */
-
+/*
+=====================================================================
+    Start of Service intro
+=====================================================================
+*/
 .services-intro {
-    padding: 10px;
-    margin: 30px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -299,39 +313,30 @@ body {
     
 }
 
-.services-intro1 ul {
-    list-style: circle;
-
-}
 
 .services-intro1 {
     background-color: var(--website1);
-    border: 1px solid var(--website1);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 60px;
-    display: flex;
-    align-items: center;
     color: whitesmoke;
-    letter-spacing: 1.4px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-        rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-        rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
 }
 
 .services-intro1 h1 {
+    border-bottom: 1px solid;
+    color: whitesmoke;
     text-align: center;
-    margin-right: 60px;
-    font-size: 34px;
+    margin-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    height: 100%;
+    
 }
 
 .services-intro1 ul {
     font-size: 20px;
+    list-style: square;
 }
 
 .services-intro1 ul li {
@@ -339,37 +344,33 @@ body {
 }
 
 .services-intro2 {
+    background-color: var(--website1);
     display: flex;
     flex-direction: column;
+    padding: 40px ;
     text-align: center;
-    background-color: var(--website1);
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 60px;
-    display: flex;
-    align-items: center;
-    color: whitesmoke;
-    font-size: 24px;
-    letter-spacing: 1.2px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-        rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-        rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-        rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-        rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+.services-intro2 h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
 
+.services-intro2 p {
+    font-size: 20px;
+}
 
-/* Begin Table */
+/*
+=====================================================================
+    Start of Table
+=====================================================================
+*/
 
 .table-pattern {
     background-color: var(--website1);
 }
-
 
 .cleaning-checklist {
     width: 100%;
@@ -388,14 +389,18 @@ body {
 }
 
 .cleaning-checklist-table thead th {
-    font-size: 1rem;
+    font-size: .9rem;
     padding: 20px 0px 10px;
 }
 
 .cleaning-checklist-table tbody td {
     padding-top: 5px;
     padding-bottom: 10px;
-    font-size: 1   rem;
+    font-size: .9rem;
+}
+
+.list-odd {
+    color: whitesmoke;
 }
 
 /* styling for check mark */
@@ -404,10 +409,11 @@ body {
     transform: rotate(45deg);
     height: 24px;
     width: 12px;
-    border-bottom: 7px solid black;
-    border-right: 7px solid black;
+    border-bottom: 7px solid greenyellow;
+    border-right: 7px solid greenyellow;
 }
 
+.
 
 
 

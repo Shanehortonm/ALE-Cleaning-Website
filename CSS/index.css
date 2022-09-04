@@ -151,21 +151,21 @@
 
 .menu-wrap .toggler {
     position: relative;
-    top: -85px;
-    left: 60px;
+    top: -45px;
+    left: 65px;
     z-index: 3;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     opacity: 0;
 }
 
 .menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: -85px;
+    left: 40px;
     z-index: 1;
-    width: 70px;
+    width: 60px;
     height: 60px;
     padding: 1rem;
     display: flex;
@@ -249,17 +249,17 @@
 }
 
 .menu-wrap .menu > div {
-    background-color: whitesmoke;
-    opacity: 0.9;
+    background-color: #128ac2;
     border-radius: 50%;
-    width: 60vw;
-    height: 60vw;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
+    box-shadow: 0 0 10px 0;
 }
 
 .menu-wrap .menu > div > div {
@@ -272,16 +272,16 @@
 
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: black;
+    color: whitesmoke;
     font-size: 1rem;
     padding: 1rem;
 }
 
 .menu-wrap .menu > div > div > ul > li:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    
     transition: 0.6 ease-in-out;
     border-radius: 50px;
-    color: white;
+    color: black;
 } 
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -345,7 +345,20 @@
         font-size: 20px;
     }
     
-    
+    .menu-wrap .hamburger {
+        position: relative;
+        top: -85px;
+        left: 40px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-wrap .toggler {
+        width: 50px;
+        height: 50px;
+        top: -15px;
+        left: 55px;
+    }
 }
 
 @media screen and (min-width: 825px) {
@@ -358,4 +371,9 @@
     .menu-wrap ul a {
         font-size: 30px;
     }
+    
+    .social li img {
+        width: 120px;
+    }
+    
 }
