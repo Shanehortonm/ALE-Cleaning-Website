@@ -152,16 +152,6 @@ body {
 
 /*
 =========================================================================
-        Start of Main
-=========================================================================
-*/
-
-.dummy-space {
-    height: 50vh;
-}
-
-/*
-=========================================================================
         Start Footer
 =========================================================================
 */
@@ -380,6 +370,13 @@ footer {
         text-align: center;
     }
 
+    .logo-img {
+        margin: 10px;
+        padding: 30px;
+        border-radius: 50%;
+        width: 300px;
+        box-shadow: var(--website1) inset 0px 4px 12px;
+    }
 
     .menu {
         display: flex;
@@ -397,10 +394,33 @@ footer {
         margin-right: 30px;
     }
     
+    .services-intro {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .services-intro1 {
+        flex-direction: column;
+        margin-right: 40px;
+    }
+
+    .services-intro1 h1, p {
+        padding: 30px;
+    }
+
+    .services-intro1 h1 {
+        padding-left: 90px;
+    }
+
+
 
 }
 
 @media (min-width: 1200px) {
+
+    .logo-img {
+        width: 400px;
+    }
 
     .menu li a {
         font-size: 1.75rem;
@@ -409,6 +429,10 @@ footer {
 }
 
 @media (min-width: 1300px) {
+
+    .logo-img {
+        width: 500px;
+    }
 
     .menu li a {
         font-size: 1.9rem;
