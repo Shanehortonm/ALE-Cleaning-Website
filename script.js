@@ -22,3 +22,8 @@ function checkBoxes() {
 			: box.classList.remove("show");
 	});
 }
+
+
+// Start of Contact Form
+
+
