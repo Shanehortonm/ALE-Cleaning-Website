@@ -47,11 +47,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -84,7 +80,13 @@
     align-items: center;
     padding-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin-top: 30vh;
+    margin-top: 40px;
+}
+
+.showcase-text img {
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 50%;
 }
 
 .showcase-text h1 {
@@ -98,7 +100,7 @@
 
 .showcase-text p {
     font-family: cursive;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 20px 0;
     font-weight: 400;
     max-width: 700px;
@@ -106,8 +108,8 @@
 }
 
 .showcase-text a {
-    display: inline-block;
-    font-size: 1em;
+    display: flex;
+    font-size: 1.4em;
     background: #fff;
     padding: 10px 30px;
     text-decoration: none;
@@ -147,23 +149,20 @@
     top: 0;
     left: 0;
     z-index: 2;
+    border: 1px solid red;
 }
 
 .menu-wrap .toggler {
     position: relative;
-    top: -45px;
-    left: 65px;
     z-index: 3;
     cursor: pointer;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     opacity: 0;
 }
 
 .menu-wrap .hamburger {
     position: relative;
-    top: -85px;
-    left: 40px;
     z-index: 1;
     width: 60px;
     height: 60px;
@@ -323,6 +322,7 @@
 
 .social li a:hover {
     transform: scale(0.9) translateY(-25px);
+    transition: 0.5s ease-in-out;
 }
 
 .social li img {
@@ -334,6 +334,15 @@
      End Social Media Imgs
 ======================================================
 */
+
+@media screen and (min-width: 320px) {
+
+    .showcase-text {
+        padding-top: 80px;
+    }
+
+}
+
 @media screen and (min-width: 500px) {
 
     .logo img {
@@ -359,6 +368,16 @@
         top: -15px;
         left: 55px;
     }
+
+    .showcase-text {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+   
+    
 }
 
 @media screen and (min-width: 825px) {
@@ -366,14 +385,24 @@
     .logo img {
         width: 425px;
         height: 275px;
-
     }
     .menu-wrap ul a {
         font-size: 30px;
     }
     
     .social li img {
-        width: 120px;
+        width: 100px;
+        transition: all 0.5s ease;
     }
     
+}
+
+@media screen and (min-width: 1000px) {
+
+    
+    
+}
+@media screen and (min-width: 1300px) {
+
+   
 }
