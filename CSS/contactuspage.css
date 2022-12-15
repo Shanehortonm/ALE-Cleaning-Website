@@ -51,25 +51,6 @@ form textarea {
 	font-size: 1.1rem;
 }
 
-form button {
-	padding: 15px;
-	background: white;
-	color: var(--website1);
-	font-size: 1.1rem;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-	width: 200px;
-	margin: 20px auto 0;
-	border-radius: 30px;
-	transition: all 0.2s ease-in;
-}
-
-form button:hover {
-	transform: scale(0.8);
-	transition: all 0.5s ease-out;
-	font-size: 1.5rem;
-}
 
 .dummy-space {
 	height: 50vh;

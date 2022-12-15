@@ -1,3 +1,20 @@
+// Start of Hamburger
+
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+	navMenu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+	hamburger.classList.remove("active");
+	navMenu.classList.remove("active");
+  }));
+
+
 // Start of Gallery
 const boxes = document.querySelectorAll(".box");
 
@@ -18,15 +35,23 @@ function checkBoxes() {
 
 // Start of Contact Form
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+let sendBtn = document.getElementById('sendBtn');
+const form = document.getElementById('form');
 
-hamburger.addEventListener("click", () => {
-	hamburger.classList.toggle("active");
-	navMenu.classList.toggle("active");
-  });
+sendBtn.addEventListener('click', function(e) {
+	e.preventDefault();
 
-  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-	hamburger.classList.remove("active");
-	navMenu.classList.remove("active");
-  }));
+	sendBtn.value = 'Sending...';
+
+	const serviceID = 'default_service';
+    const templateID = 'template_ll9pb4l';
+
+    emailjs.sendForm(serviceID, templateID, form)
+      .then(() => {
+        sendBtn.value = 'Send Email';
+        alert('Sent!');
+      }, (err) => {
+        sendBtn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+})
