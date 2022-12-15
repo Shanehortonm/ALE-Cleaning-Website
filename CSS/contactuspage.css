@@ -9,7 +9,25 @@
 	box-sizing: border-box;
 }
 
+
+/*
+===================================================================
+Start of Email
+===================================================================
+*/
+
+.email-layer {
+	background-color: #90e0ef;
+	width: 620px;
+	height: 620px;
+	z-index: -1;
+	position: relative;
+	left: -300px;
+	top: 60px;
+}
+
 .email-container {
+	padding-top: 50px;
 	width: 100%;
 	height: 100%;
 	display: flex;
