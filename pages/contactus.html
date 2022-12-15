@@ -39,48 +39,51 @@
         </nav>
       </div>
     </header>
-    <!-- End of Nav -->
     <!-- Start of Main -->
+    <main>
+      <!-- Start of Intro-->
+      <section>
+        <div class="intro"></div>
+      </section>
+      <!-- Start of Email-->
+      <section>
+        <div class="email-container">
+          <form id="form">
+            <h3>Request a Free Estimate</h3>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="text"
+              id="number"
+              name="number"
+              placeholder="Phone #"
+              required
+            />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="How can we help you?"
+            ></textarea>
+            <input type="button" value="Send Email" id="sendBtn" />
+          </form>
+        </div>
+      </section>
 
-    <section>
-      <div class="email-container">
-        <form id="form">
-          <h3>Request a Free Estimate</h3>
-          <input
-            type="name"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-          <input
-            type="text"
-            id="number"
-            name="number"
-            placeholder="Phone #"
-            required
-          />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="How can we help you?"
-          ></textarea>
-          <input type="button" value="Send Email" id="sendBtn" />
-        </form>
-        <div class="email-layer"></div>
-      </div>
-    </section>
-
-    <div class="dummy-space"></div>
-    <!-- End of Main -->
+      <div class="dummy-space"></div>
+    </main>
     <!-- Start of Footer -->
     <footer>
       <div class="footer-nav">
@@ -134,7 +137,7 @@
         </li>
       </div>
     </footer>
-    <!-- End of Footer -->
+    <!-- Start of Script -->
     <script src="/script.js"></script>
 
     <script

@@ -9,6 +9,14 @@
 	box-sizing: border-box;
 }
 
+main {
+	background: url(/img/cleaningphoto2.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
 
 /*
 ===================================================================
@@ -16,19 +24,10 @@ Start of Email
 ===================================================================
 */
 
-.email-layer {
-	background-color: #90e0ef;
-	width: 620px;
-	height: 620px;
-	z-index: -1;
-	position: relative;
-	left: -300px;
-	top: 60px;
-}
-
 .email-container {
-	padding-top: 50px;
+	padding: 250px 0 250px 0;
 	width: 100%;
+	min-width: 300px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -69,7 +68,3 @@ form textarea {
 	font-size: 1.1rem;
 }
 
-
-.dummy-space {
-	height: 50vh;
-}
