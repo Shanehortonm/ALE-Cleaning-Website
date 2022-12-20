@@ -13,19 +13,7 @@
         Start of Showcase
 =====================================================================
 */
-.logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
 
-.logo img {
-	width: 300px;
-	border-radius: 50%;
-	opacity: 0.9;
-	transition: 0.4s ease-in-out;
-}
 
 .showcase {
 	position: absolute;
@@ -43,14 +31,13 @@
 
 .showcase header {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100%;
     padding: 40px 100px;
     z-index: 1000;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .overlay {
@@ -82,7 +69,13 @@
     align-items: center;
     padding-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin-top: 30vh;
+}
+
+.logo  {
+	width: 300px;
+	border-radius: 50%;
+	opacity: 0.9;
+	transition: 0.4s ease-in-out;
 }
 
 .showcase-text h1 {
@@ -97,7 +90,7 @@
 .showcase-text p {
     font-family: cursive;
     font-size: 1.2em;
-    margin: 20px 0;
+    padding: 20px 0;
     font-weight: 400;
     max-width: 700px;
     text-align: center;
@@ -110,7 +103,6 @@
     padding: 10px 30px;
     text-decoration: none;
     color: whitesmoke;
-    margin-top: 10px;
     border-radius: 3px;
     text-transform: uppercase;
     letter-spacing: 2px;
