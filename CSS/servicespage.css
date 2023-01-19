@@ -62,7 +62,6 @@ body {
 	border-radius: 20px;
 	justify-content: center;
 	align-items: center;
-	margin: 30px;
 	padding: 10px;
 	box-shadow: 0px 0px 10px 2px var(--website5);
 }
@@ -173,18 +172,20 @@ button:focus::after {
 */
 
 .cleaningServiceIcon {
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	margin-bottom: 2px;
+	transition: all 0.5s ease;
 }
 
 .services-intro {
 	margin-top: 3vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
+	
 }
 
 .services-intro1 {
@@ -194,6 +195,7 @@ button:focus::after {
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
+	transition: all 0.5s ease;
 }
 
 .services-intro1 h1 {
@@ -203,17 +205,31 @@ button:focus::after {
 	padding-bottom: 10px;
 	font-size: 30px;
 	height: 100%;
+	transition: all 0.5s ease;
 }
 
-.services-intro1 ul {
+.services-intro1 > div {
 	text-align: center;
 	font-size: 20px;
 	list-style: none;
 	margin: 40px;
 }
 
-.services-intro1 ul li {
-	margin-bottom: 50px;
+.service-description > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-description p {
+	margin-right: 3rem;
+}
+
+.service-description h3 {
+	font-size: 1.2rem;
+	transition: all 0.5s ease;
 }
 
 .services-intro2 {
@@ -229,10 +245,16 @@ button:focus::after {
 	margin-bottom: 40px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid whitesmoke;
+	transition: all 0.5s ease;
 }
 
 .services-intro2 p {
 	font-size: 24px;
+	transition: all 0.5s ease;
+}
+
+.hidden-text {
+	display: none;
 }
 
 /*
@@ -295,28 +317,25 @@ button:focus::after {
 }
 
 .box {
-	width: 400px;
-	height: 300px;
-	margin: 10px;
-
+	width: 85%;
+	height: 350px;
+	max-width: 1200px;
+	margin: 15px 10px ;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	font-size: 25px;
 	color: var(--light-color);
-
 	background-color: var(--primary-color);
 	border: #ffffff;
 	border-radius: 5px;
 	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.6);
-
 	transform: translateX(-300%);
 	transition: transform 500ms ease-in-out;
+	transition: all 0.5s ease;
 }
 
 .box:nth-of-type(even) {
@@ -349,13 +368,30 @@ button:focus::after {
 
 .cleaning-checklist {
 	width: 100%;
-	padding-bottom: 30px;
-	margin-top: 10vh;
+	padding: 5rem 1rem;
 }
+
+.cleaning-checklist-header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	transition: all 0.5s ease;
+}
+
+.cleaning-checklist-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 
 .cleaning-checklist-table {
 	text-align: center;
-	padding: 20px;
+	width: 90%;
 }
 
 .cleaning-checklist-table caption {
@@ -366,7 +402,7 @@ button:focus::after {
 
 .cleaning-checklist-table thead th {
 	font-size: 0.9rem;
-	padding: 20px 0px 10px;
+	padding: 3rem .5rem;
 }
 
 .cleaning-checklist-table tbody td {
@@ -394,3 +430,133 @@ button:focus::after {
         Start Media Queries
 =========================================================
 */
+
+
+@media screen and (min-width:480px) {
+
+	/* Start of Banner */
+
+
+	/* Start of Service Intro */
+	
+	.cleaningServiceIcon {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 2px;
+		transition: all 0.5s ease;
+	}
+
+	/* Start of Gallery */
+
+	
+
+	/* Start of Checklist */
+
+
+	/* Start of Footer */
+}
+
+/* TABLETS PORTRAIT */
+@media screen and (min-width: 768px) {
+
+
+	/* Start of Banner */
+	.banner-box {
+		margin: 10rem 10rem;
+		width: 600px;
+		height: 300px;
+		transition: all 0.5s ease;
+	}
+
+	/* Start of Service Intro */
+
+	.cleaningServiceIcon {
+		width: 120px;
+		height: 120px;
+		margin-bottom: 2px;
+		transition: all 0.5s ease;
+	}
+
+	.hidden-text {
+		display: contents;
+	}
+
+	.service-description {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 10px 20px;
+	}
+
+	.service-description p {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.services-intro1 {
+		transition: all 0.5s ease;
+	}
+
+	/* Start of Gallery */
+
+
+	/* Start of Checklist */
+
+
+	/* Start of Footer */
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media screen and (min-width: 1500px) {
+
+
+	/* Start of Banner */
+
+
+	/* Start of Service Intro */
+
+	.cleaningServiceIcon {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 2px;
+		transition: all 0.5s ease;
+	}
+
+	/* Start of Gallery */
+
+
+	/* Start of Checklist */
+
+	.cleaning-checklist h2 {
+		font-size: 2rem;
+		transition: all 0.5s ease;
+	}
+
+	.cleaning-checklist-container {
+		flex-direction: row;
+	}
+
+	.cleaning-checklist-table {
+		margin: 10px 10px;
+	}
+	
+	.cleaning-checklist-table > thead > tr > th {
+		font-size: 1.3rem;
+		transition: all 0.5s ease;
+	}
+
+	.cleaning-checklist-table > tbody > tr > td {
+		font-size: 1.1rem;
+		transition: all 0.5s ease;
+	}	
+
+	/* Start of Footer */
+
+}    
+
+
