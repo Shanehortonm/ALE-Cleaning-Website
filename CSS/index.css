@@ -304,11 +304,11 @@
 }
 
 .social li a:hover {
-	transform: scale(0.9) translateY(-25px);
+	transform: scale(0.7) translateY(-30px);
 }
 
 .social li img {
-	width: 70px;
+	width: 100px;
 }
 
 /*
@@ -347,6 +347,7 @@
 		top: -15px;
 		left: 55px;
 	}
+	
 }
 
 @media screen and (min-width: 768px) {

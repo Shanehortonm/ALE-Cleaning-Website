@@ -198,6 +198,7 @@ button:focus::after {
 	transition: all 0.5s ease;
 }
 
+
 .services-intro1 h1 {
 	border-bottom: 1px solid;
 	color: whitesmoke;
@@ -221,6 +222,8 @@ button:focus::after {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border: 2px solid white;
+	padding: 20px;
 }
 
 .service-description p {
