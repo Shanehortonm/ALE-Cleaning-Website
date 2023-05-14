@@ -178,6 +178,10 @@ button:focus::after {
 	transition: all 0.5s ease;
 }
 
+.cleaning-service {
+	text-align: center;
+}
+
 .services-intro {
 	margin-top: 3vh;
 	display: flex;
@@ -219,14 +223,15 @@ button:focus::after {
 
 .service-description > div {
 	width: 100%;
+	max-width: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: 2px solid white;
-	padding: 20px;
-	box-shadow: 0 40px 80px #FBE4E0;
-  border-radius: 14px;
+	padding: 40px;
+	box-shadow:  2px 2px 50px 2px #FBE4E0;
+	border-radius: 100% 0% 100% 0% / 75% 19% 75% 19% ;
 }
 
 
@@ -531,8 +536,8 @@ button:focus::after {
 	/* Start of Service Intro */
 
 	.cleaningServiceIcon {
-		width: 150px;
-		height: 150px;
+		width: 120px;
+		height: 120px;
 		margin-bottom: 2px;
 		transition: all 0.5s ease;
 	}
