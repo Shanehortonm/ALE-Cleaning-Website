@@ -174,7 +174,7 @@ button:focus::after {
 .cleaningServiceIcon {
 	width: 90px;
 	height: 90px;
-	margin-bottom: 2px;
+	margin-bottom: 3px;
 	transition: all 0.5s ease;
 }
 
@@ -221,15 +221,18 @@ button:focus::after {
 	
 }
 
+.service-description {}
+
 .service-description > div {
 	width: 100%;
 	max-width: 350px;
+	min-width: 220px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: 2px solid white;
-	padding: 40px;
+	opacity: 1;
 	box-shadow:  2px 2px 50px 2px #FBE4E0;
 	border-radius: 100% 0% 100% 0% / 75% 19% 75% 19% ;
 }
