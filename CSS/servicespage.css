@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
 
@@ -41,7 +43,7 @@ body {
 	width: 100%;
 	min-height: 50vh;
 	height: 70vh;
-	background: url(/img/servicebanner.png);
+	background-image: url(/img/servicebanner.png);
 	background-size: cover;
 	opacity: 0.9;
 	box-shadow: 0 0 15px 5px;
@@ -189,7 +191,6 @@ button:focus::after {
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
-	
 }
 
 .services-intro1 {
@@ -201,7 +202,6 @@ button:focus::after {
 	flex-direction: column;
 	transition: all 0.5s ease;
 }
-
 
 .services-intro1 h1 {
 	border-bottom: 1px solid;
@@ -218,10 +218,10 @@ button:focus::after {
 	font-size: 20px;
 	list-style: none;
 	margin: 40px;
-	
 }
 
-.service-description {}
+.service-description {
+}
 
 .service-description > div {
 	width: 100%;
@@ -233,11 +233,9 @@ button:focus::after {
 	align-items: center;
 	border: 2px solid white;
 	opacity: 1;
-	box-shadow:  2px 2px 50px 2px #FBE4E0;
-	border-radius: 100% 0% 100% 0% / 75% 19% 75% 19% ;
+	box-shadow: 2px 2px 50px 2px #fbe4e0;
+	border-radius: 100% 0% 100% 0% / 75% 19% 75% 19%;
 }
-
-
 
 .service-description p {
 	margin-right: 3rem;
@@ -336,7 +334,7 @@ button:focus::after {
 .box {
 	width: 80%;
 	max-width: 900px;
-	margin: 25px 10px ;
+	margin: 25px 10px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -404,7 +402,6 @@ button:focus::after {
 	align-items: center;
 }
 
-
 .cleaning-checklist-table {
 	text-align: center;
 	width: 90%;
@@ -418,7 +415,7 @@ button:focus::after {
 
 .cleaning-checklist-table thead th {
 	font-size: 0.9rem;
-	padding: 3rem .5rem;
+	padding: 3rem 0.5rem;
 }
 
 .cleaning-checklist-table tbody td {
@@ -447,21 +444,17 @@ button:focus::after {
 =========================================================
 */
 
-
-@media screen and (min-width:480px) {
-
+@media screen and (min-width: 480px) {
 	/* Start of Banner */
 
-
 	/* Start of Service Intro */
-	
+
 	.cleaningServiceIcon {
 		width: 100px;
 		height: 100px;
 		margin-bottom: 2px;
 		transition: all 0.5s ease;
 	}
-	
 
 	/* Start of Gallery */
 
@@ -471,14 +464,10 @@ button:focus::after {
 
 	/* Start of Checklist */
 
-
 	/* Start of Footer */
 }
 
-
 @media screen and (min-width: 768px) {
-
-
 	/* Start of Banner */
 	.banner-box {
 		margin: 10rem 10rem;
@@ -521,21 +510,13 @@ button:focus::after {
 
 	/* Start of Gallery */
 
-
 	/* Start of Checklist */
 
-
 	/* Start of Footer */
-
 }
 
-
-
 @media screen and (min-width: 1500px) {
-
-
 	/* Start of Banner */
-
 
 	/* Start of Service Intro */
 
@@ -552,7 +533,6 @@ button:focus::after {
 		height: 450px;
 	}
 
-
 	/* Start of Checklist */
 
 	.cleaning-checklist h2 {
@@ -567,7 +547,7 @@ button:focus::after {
 	.cleaning-checklist-table {
 		margin: 10px 10px;
 	}
-	
+
 	.cleaning-checklist-table > thead > tr > th {
 		font-size: 1.3rem;
 		transition: all 0.5s ease;
@@ -576,10 +556,7 @@ button:focus::after {
 	.cleaning-checklist-table > tbody > tr > td {
 		font-size: 1.1rem;
 		transition: all 0.5s ease;
-	}	
+	}
 
 	/* Start of Footer */
-
-}    
-
-
+}
